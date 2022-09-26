@@ -1,1 +1,40 @@
-// Write your styles
+body {
+  width: 100vw;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-direction: row;
+
+  #img-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/amsterdam.jpg');
+    background-size: cover;
+
+    #logo-container {
+      width: 100%;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    #footer-text {
+      
+    }
+  }
+
+  #form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      
+    }
+  }
+}

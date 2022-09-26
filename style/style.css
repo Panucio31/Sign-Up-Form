@@ -1,1 +1,30 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  width: 100vw;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  flex-direction: row;
+}
+body #img-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/amsterdam.jpg");
+  background-size: cover;
+}
+body #img-container #logo-container {
+  width: 100%;
+}
+body #img-container #logo-container img {
+  width: 100px;
+}
+body #form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #form-container form {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=style.css.map */
