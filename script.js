@@ -10,6 +10,16 @@ const highlightPasswordElements = () => {
   passwordErrorText.classList.remove("hide");
 };
 
+const removeHighlightPassword = () => {
+  if (passwordField.value === passwordConfirm.value) {
+  passwordField.style.borderColor = "blue";
+  passwordConfirm.style.borderColor = "blue";
+
+  passwordErrorText.classList.add("hide");
+  }
+}
+
+
 function checkPassword(event) {
   if (!passwordField.value || !passwordConfirm.value) {
     return undefined;
@@ -19,8 +29,12 @@ function checkPassword(event) {
     event.preventDefault();
     return undefined;
   }
- alert('Huray!!!');
- return undefined;
+  alert('Huray!!!');
+  return undefined;
 }
 
 submitBtn.addEventListener("click", checkPassword);
+
+passwordField.addEventListener('input', removeHighlightPassword)
+
+passwordConfirm.addEventListener('input', removeHighlightPassword)
