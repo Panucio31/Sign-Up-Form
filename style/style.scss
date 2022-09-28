@@ -9,7 +9,7 @@ body {
   align-items: center;
 
   #img-container {
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ body {
     align-items: center;
     background-image: url("../img/amsterdam.jpg");
     background-size: cover;
-    background-position: center;
+    background-position:inherit;
 
     #logo-container {
       width: 100%;
@@ -38,7 +38,7 @@ body {
   }
 
   #form-container {
-    width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,12 +76,15 @@ body {
   }
 
   .text-container {
+    
     display: flex;
     flex-direction: column;
   }
 
   .main-container {
-    margin-left: 50px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 
     #submit-btn {
@@ -102,4 +105,26 @@ body {
 
 .hide {
   display: none;
+}
+
+@media only screen and (max-width: 570px) {
+  body {
+    flex-direction: column;
+
+    #img-container {
+      position: relative;
+    }
+
+    .main-container {
+      width: 100%;
+      padding: 20px;
+      font-size: 16px;
+      align-items: center;
+
+      #submit-btn {
+        margin-top: 30px;
+        justify-content: center;
+      }
+    }
+  }
 }

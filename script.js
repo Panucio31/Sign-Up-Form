@@ -6,17 +6,13 @@ const passwordErrorText = document.getElementById("password-error");
 const highlightPasswordElements = () => {
   passwordField.style.borderColor = "red";
   passwordConfirm.style.borderColor = "red";
-
   passwordErrorText.classList.remove("hide");
 };
 
 const removeHighlightPassword = () => {
-  if (passwordField.value === passwordConfirm.value) {
   passwordField.style.borderColor = "blue";
   passwordConfirm.style.borderColor = "blue";
-
   passwordErrorText.classList.add("hide");
-  }
 }
 
 
