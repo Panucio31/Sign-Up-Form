@@ -79,4 +79,13 @@ body .main-container #submit-btn {
   border: none;
   border-radius: 5px;
   margin-top: 100px;
+}
+
+#password-error {
+  color: red;
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
